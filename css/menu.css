@@ -1,0 +1,255 @@
+/* Menu */
+
+.menu-product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.products-title {
+    padding: 0 192px;
+    font-size: 30px;
+    font-weight: 650;
+    margin-bottom: 50px;
+    padding-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: dotted;
+
+}
+
+#subtittle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-decoration: underline;
+    padding-bottom: 15px;
+    font-weight: 550;
+}
+
+
+.product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.food-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 35px;
+}
+
+.food-image {
+    position: relative;
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+    margin-left: -45px;
+    border: 3px solid lightcoral;
+    border-radius: 10px;
+}
+
+.product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+/* next and prev button */
+.prev,
+.next {
+    border: none;
+    width: 10vw;
+    height: 130%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.prev {
+    left: 150px;
+}
+
+.next {
+    right: 150px;
+    transform: rotate(180deg);
+}
+
+
+.prev img,
+.next img {
+    opacity: 0.3;
+    width: 30px;
+    height: 30px;
+}
+
+
+.prev:hover img {
+    opacity: 5;
+}
+
+.next:hover img  {
+    opacity: 5;
+}
+
+
+/* Order Button */
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    text-align: center;
+}
+
+.food-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: pink;
+    color: black;
+}
+
+.drink-description {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+    margin-left: -40px;
+}
+
+.product-short-desc {
+    width: 100%;
+    height: 70px;
+    line-height: 20px;
+    font-size: 12px;
+    background-color: rgba(255, 182, 193, 0.61);
+    color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    margin: 5px 0;
+    margin-left: -40px;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: -40px;
+}
+
+
+
+.menu-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.menu-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.menu:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+
+/* Order CSS */
+
+.cart {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(255, 182, 193, 0.476);
+}
+
+.cart-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid palevioletred;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.cart p {
+    color: black;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart button {
+    background-color: lightpink;
+    border: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+
+.close {
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

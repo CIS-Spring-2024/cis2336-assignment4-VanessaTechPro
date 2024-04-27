@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #961b1fb1;
+    background-image: url(images/UH_Cafe_2.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+/* Menu */
+.menu-bar {
+    background: rgba(0, 0, 0, 0.712);
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.active, menu-bar ul li:hover{
+    background-color: red;
+    border-radius: 3px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .dropdown ul {
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li {
+    width: 125px;
+    padding: 10px;
+    border-bottom: 1px dotted whitesmoke;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    height: 118px;
+    text-align: center;
+}
+
+main {
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+.home_text{
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 10%;
+    width: 75%;
+}
+
+.home_text h1 {
+        text-align: center;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.719);
+    height: 99px;
+}
+
+
+p { 
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Biography */
+.text {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.text p1 {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.text p2 {
+    text-align: start;
+    padding-bottom: 5px;
+}
+
+
+/* Wrapper */
+
+.wrapper-menu {
+    margin: 0 10vw;
+}

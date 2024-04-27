@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <script src="/public/menu.js" defer></script>
+</head>
+
+<body>
+    <div class="box">
+
+        <header>
+            <img src="/images/UH__1_-removebg-preview.png" alt="Logo for University of Houston">
+        </header>
+
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="SERVICES.html">SERVICES</a></li>
+                <li class="active"><a href="MENU.html">MENU</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <section class="menu-products" style="background-color: rgba(245, 245, 245, 0.719);">
+            <h2 class="products-title">Menu</h2>
+            <h3 id="subtittle">Drinks</h3>
+
+            <div class="product-container">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/KT1.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Kung Fu Boba','7.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Kung Fu Boba</h2>
+                        <p class="product-short-desc">A base tea (such as black or green tea), sweetened milk, and chewy
+                            tapioca pearls (boba)</p>
+                        <span class="price">$7.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/smoothie.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Fruity Smoothie','8.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Fruity Smoothie</h2>
+                        <p class="product-short-desc">Bursting with vibrant flavors and packed with vitamins, our Fruity
+                            Smoothie offers a delightful way to enjoy a
+                            healthy snack</p>
+                        <span class="price">$8.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/coffee.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Golden Eagle Coffee','7.50')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Golden Eagle Coffee</h2>
+                        <p class="product-short-desc">Offers a premium blend of meticulously selected coffee beans,
+                            delivering a rich and flavorful experience with every sip.</p>
+                        <span class="price">$7.50</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="menu-products" style="background-color: rgba(245, 245, 245, 0.719);">
+            <h3 id="subtittle">Food</h3>
+
+            <div class="product-container">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/chipotle.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Chipotle Bowl','11.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Chipotle Bowl</h2>
+                        <p class="product-short-desc">A bowl of rice (either white or brown),
+                            topped with beans, a choice of protein(vegetarians options), and various toppings </p>
+                        <span class="price">$11.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/chicken.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Chicken Combo','18.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Chicken Combo</h2>
+                        <p class="product-short-desc">Presents a convenient and satisfying choice for chicken
+                            enthusiasts, combining flavorsome options into one delightful package.</p>
+                        <span class="price">$18.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/panda.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Orange Chicken','10.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Orange Chicken</h2>
+                        <p class="product-short-desc"> It features tender pieces of chicken that are battered and fried,
+                            then coated in a savory and tangy orange-flavored sauce.</p>
+                        <span class="price">$10.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="menu-products" style="background-color: rgba(245, 245, 245, 0.719);">
+            <h3 id="subtittle">Dessert</h3>
+
+            <div class="product-container">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/donut.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Krispy Cream Donut','6.50')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Krispy Cream Donut</h2>
+                        <p class="product-short-desc">Krispy Kreme
+                            offers a wide variety of flavors and toppings, ranging from classic favorites to seasonal
+                            specialties.</p>
+                        <span class="price">$6.50</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="sumbitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/bakery.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Strawberry Cake Slice','5.00')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Strawberry Cake Slice</h2>
+                        <p class="product-short-desc">Slice offers a delightful combination of light and fluffy cake
+                            layered with luscious strawberry filling</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="/images/Menu/yogurt.jpg" class="product" alt="Drink served at Cougar Bites">
+                        <button class="card-btn" onclick="openOrder('Fruity Frozen Yogurt','6.50')">Order Now</button>
+                    </div>
+                    <div class="drink-description">
+                        <h2 class="product-brand">Fruity Frozen Yogurt</h2>
+                        <p class="product-short-desc">Delicious and refreshing frozen dessert made from yogurt and
+                            infused with natural fruit flavors</p>
+                        <span class="price">$5.50</span>
+                    </div>
+                    <div id="cartForm" class="cart">
+                        <form class="cart-content" id="orderContent">
+                            <span class="close" id="closeCart">&times;</span>
+                            <h2>Order Form</h2>
+                            <p>Please specify the quantity for "<span id="itemName"></span>" (1-10)</p>
+                            <input type="number" id="quantity" min="1" max="10" required>
+                            <button type="submit" id="submitButton">Submit Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<footer></footer>
+
+</body>
