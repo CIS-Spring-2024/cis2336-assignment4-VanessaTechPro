@@ -143,3 +143,37 @@ a{
 .wrapper-menu {
     margin: 0 10vw;
 }
+
+
+/* Contact */
+
+#hours {
+    text-align: left;
+}
+
+#hours h2 {
+    padding-left: 170px;
+    text-decoration: underline;
+}
+
+#hours h3 {
+    padding-left: 185px;
+}
+
+#email {
+    text-align: right;
+    margin-top: -70px;
+}
+
+#email h2 {
+    padding-right: 190px;
+    text-decoration: underline;
+}
+
+#email h3 {
+    padding-right: 185px;
+}
+.maps {
+    margin-top: -260px;
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <div id="orderDetails">
+        <!-- Order details will be displayed here -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Extract URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const itemName = urlParams.get('itemName');
+            const quantity = urlParams.get('quantity');
+            const totalAmount = urlParams.get('totalAmount');
+
+            // Display order details
+            const orderDetailsDiv = document.getElementById('orderDetails');
+            orderDetailsDiv.innerHTML = `
+                <p>Item: ${itemName}</p>
+                <p>Quantity: ${quantity}</p>
+                <p>Total Amount: $${totalAmount}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
+
+
